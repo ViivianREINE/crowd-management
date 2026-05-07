@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: crowdguard-backend
+    env: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: UPLOAD_DIR
+        value: /tmp/uploads
+      - key: MAX_UPLOAD_SIZE
+        value: "104857600"
+    disk:
+      - name: uploads
+        mountPath: /tmp/uploads
+        sizeGB: 1

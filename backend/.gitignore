@@ -1,0 +1,29 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Models and generated files
+models/
+*.h5
+*.pth
+*.onnx
+*.pkl
+
+# Logs
+*.log
+
+# IDE / editor
+.vscode/
+.idea/
+.DS_Store
