@@ -5,6 +5,6 @@
   "installCommand": "npm install",
   "outputDirectory": ".next",
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://crowd-management-backend.onrender.com"
+    "NEXT_PUBLIC_API_URL": "https://crowd-management-5fpf.onrender.com"
   }
 }
